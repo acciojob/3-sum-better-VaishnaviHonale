@@ -1,11 +1,11 @@
 function threeSum(arr, target) {
 // write your code here
-	let result = nums[0] + nums[1] + nums[nums.length - 1];
-    nums.sort((a, b) => a - b);
-    for (let i = 0; i < nums.length - 2; i++) {
-        let start = i + 1, end = nums.length - 1;
+	let result = arr[0] + arr[1] + arr[arr.length - 1];
+    arr.sort((a, b) => a - b);
+    for (let i = 0; i < arr.length - 2; i++) {
+        let start = i + 1, end = arr.length - 1;
         while (start < end) {
-            let sum = nums[i] + nums[start] + nums[end];
+            let sum = arr[i] + arr[start] + arr[end];
             if (sum > target) {
                 end--;
             } else {
